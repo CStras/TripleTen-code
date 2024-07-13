@@ -38,9 +38,9 @@
 .header__image {
   z-index: 1;
   max-width: 550px;
-  margin-top: 148px;
   position: absolute;
   right: 48px;
+  top: 148px;
 }
 
 .header__footer {
@@ -237,7 +237,7 @@
 
 .staff {
   padding: 100px 0 140px;
-  background-image: url("/images/staff_picks_background.jpg");
+  background-image: url("../images/staff_picks_background.jpg");
 }
 
 .staff__title {
@@ -373,7 +373,7 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  margin: auto;
+  margin-left: 0;
 }
 
 .about__image {
@@ -385,9 +385,10 @@
 
 .about__paragraph {
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
-.about__content .about__paragraph:last-child {
+.about__paragraph:last-child {
   margin-bottom: 0;
 }
 
@@ -415,7 +416,6 @@
 .footer__logo {
   height: 80px;
   width: 57px;
-  position: static;
 }
 
 .footer__list {
@@ -425,12 +425,19 @@
   margin: 0;
 }
 
+.footer__list-item {
+  margin-top: 16px;
+}
+
 .footer__list-item:first-child {
-  margin-bottom: 16px;
+  margin-top: 20px;
 }
 
 .footer__column-heading {
   margin-bottom: 20px;
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__column-link {
